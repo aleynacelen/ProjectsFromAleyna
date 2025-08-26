@@ -5,7 +5,7 @@ namespace EShop.Data.Abstract;
 
 public interface IGenericRepository<TEntity> where TEntity : class
 {
-    Task<TEntity> GetAsync(int id);;
+    Task<TEntity> GetAsync(int id);
 
     Task<TEntity> GetAsync(
         Expression<Func<TEntity, bool>> predicate,
